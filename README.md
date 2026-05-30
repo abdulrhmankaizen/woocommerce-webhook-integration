@@ -1,5 +1,9 @@
 # WooCommerce Webhook Integration
 
+## Screenshot
+
+![WooCommerce Webhook Integration](screenshot.png.jpeg)
+
 ## Project Overview
 
 This project demonstrates a WooCommerce webhook integration used for automated order processing and delivery workflow synchronization.
@@ -19,27 +23,32 @@ This project demonstrates a WooCommerce webhook integration used for automated o
 - WooCommerce
 - PHP
 - REST API
-- Webhooks
+- JSON
 
-## Workflow
+## Sample Webhook Payload
 
-1. Customer places an order
-2. WooCommerce creates the order
-3. Webhook sends order information
-4. Delivery system receives the order
-5. Order status updates are synchronized
+```json
+{
+  "order_id": 4374,
+  "customer_name": "example",
+  "phone": "+96550000000",
+  "status": "processing",
+  "payment_method": "visa",
+  "total": "25.000",
+  "items": [
+    {
+      "sku": "POPCORN-CURRY",
+      "quantity": 2
+    }
+  ]
+}
+```
 
-## Example Use Cases
+## Use Case
 
-- Ecommerce stores
-- Delivery companies
-- Inventory synchronization
-- Order automation
+This integration is designed to automatically send WooCommerce order data to external delivery systems and warehouse management platforms using webhooks.
 
-## Skills Demonstrated
+## Author
 
-- WooCommerce Configuration
-- API Integrations
-- Webhook Management
-- Ecommerce Automation
-- WordPress Administration
+Abdulrahman Alkhlaifi
+WordPress & WooCommerce Developer
