@@ -1,0 +1,14 @@
+{
+  "order_id": 4374,
+  "customer_name": "example",
+  "phone": "+96550000000",
+  "status": "processing",
+  "payment_method": "visa",
+  "total": "25.000",
+  "items": [
+    {
+      "sku": "POPCORN-CURRY",
+      "quantity": 2
+    }
+  ]
+}
